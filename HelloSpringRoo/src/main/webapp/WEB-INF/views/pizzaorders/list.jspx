@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_springsource_roo_pizzashop_domain_PizzaOrder" items="${pizzaorders}" z="HiqmrPMhIzfyd3JvA1mtUJDWsDQ=">
+        <table:table data="${pizzaorders}" delete="false" id="l_com_springsource_roo_pizzashop_domain_PizzaOrder" path="/pizzaorders" update="false" z="X0rFxGkmyoqyXjZ79mC/EYba5ZE=">
+            <table:column id="c_com_springsource_roo_pizzashop_domain_PizzaOrder_name" property="name" z="Qm50zRuBJEd3ehgBfZ44OQZYnRE="/>
+            <table:column id="c_com_springsource_roo_pizzashop_domain_PizzaOrder_address" property="address" z="8++o1pOMy335p6bsDSSthrGcEIM="/>
+            <table:column id="c_com_springsource_roo_pizzashop_domain_PizzaOrder_total" property="total" z="Z4twC+m/kNAgb2UJqsd/8M13cUM="/>
+            <table:column date="true" dateTimePattern="${pizzaOrder_deliverydate_date_format}" id="c_com_springsource_roo_pizzashop_domain_PizzaOrder_deliveryDate" property="deliveryDate" z="OvmuxwZGHrzZKFYNJ2BDKAizoK8="/>
+            <table:column id="c_com_springsource_roo_pizzashop_domain_PizzaOrder_pizzas" property="pizzas" z="qk/+HqwXvj6m9IwDQr5rDa39LL4="/>
+        </table:table>
+    </page:list>
+</div>
