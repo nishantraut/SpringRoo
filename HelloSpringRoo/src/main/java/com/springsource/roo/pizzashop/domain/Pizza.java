@@ -16,6 +16,7 @@ import javax.persistence.ManyToOne;
 public class Pizza {
 
     /**
+     * name property
      */
     @NotNull
     @Size(min = 2)
